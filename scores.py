@@ -4,6 +4,15 @@ Scores
 """
 import random
 
+def main():
+    user_score = float(input("Enter your score: "))
+    result = determine_result(user_score)
+    print(result)
+
+    random_score = random.randint(0, 100)
+    result = determine_result(random_score)
+    print(f"Random score ({random_score}): {result}")
+
 def determine_result(score):
     if score < 0 or score > 100:
         return "Invalid score"
@@ -14,13 +23,5 @@ def determine_result(score):
     else:
         return "Bad"
 
-def main():
-    user_score = float(input("Enter your score: "))
-    result = determine_result(user_score)
-    print(result)
-
-    random_score = random.randint(0, 100)
-    result = determine_result(random_score)
-    print(f"Random score ({random_score}): {result}")
 
 main()
