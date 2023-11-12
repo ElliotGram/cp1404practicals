@@ -1,5 +1,5 @@
 BoxLayout:
-    orientation: 'vertical'
+    orientation: 'horizontal'
 
     TextInput:
         id: input_miles
@@ -9,7 +9,7 @@ BoxLayout:
         on_text: app.handle_conversion()
 
     BoxLayout:
-        orientation: 'horizontal'
+        orientation: 'vertical'
 
         Button:
             text: 'Up'
@@ -19,8 +19,8 @@ BoxLayout:
             text: 'Down'
             on_press: app.handle_increment(-1)
 
-        Label:
-            text: 'Miles to Kilometers:'
+    Label:
+        text: 'Miles to Kilometers:'
 
-        Label:
-            text: app.output_result
+    Label:
+        text: app.output_result
