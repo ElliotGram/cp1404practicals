@@ -9,10 +9,8 @@ class BoxLayoutDemo(App):
         return self.root
 
     def handle_greet(self):
-        if random.randint(1, 10) <= 5:
-            self.root.ids.my_label.text = "ouch!!"
-        else:
-            self.root.ids.my_label.text = "stop that!!"
+        print("test")
+        self.root.ids.output_label.text = f"Hello {self.root.ids.input_name.text}"
 
 
 BoxLayoutDemo().run()

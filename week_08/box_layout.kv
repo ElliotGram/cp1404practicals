@@ -4,11 +4,13 @@ BoxLayout:
     Button:
         text: 'Clear'
     Button:
-        text: 'Greet'
-        on_press: app.handle_greet()
+    TextInput:
+        id: input_name
+        text: ''
     Button:
-        text: 'three'
+        text: 'Greet'
+            on_press: app.handel_greetl()
     Label:
-        id: handle_greet()
+        id: output_label()
         text: 'Enter your name'
         color: (1, 1, 0, 1)
