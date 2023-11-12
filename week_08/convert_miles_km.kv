@@ -1,23 +1,26 @@
 BoxLayout:
-    orientation: 'horizontal'
-
-    TextInput:
-        id: input_miles
-        input_type: 'number'
-        multiline: False
-        hint_text: 'Enter miles'
-        on_text: app.handle_conversion()
+    orientation: 'vertical'
 
     BoxLayout:
-        orientation: 'vertical'
+        orientation: 'horizontal'
 
-        Button:
-            text: 'Up'
-            on_press: app.handle_increment(1)
+        TextInput:
+            id: input_miles
+            input_type: 'number'
+            multiline: False
+            hint_text: 'Enter miles'
+            on_text: app.handle_conversion()
 
-        Button:
-            text: 'Down'
-            on_press: app.handle_increment(-1)
+        BoxLayout:
+            orientation: 'vertical'
+
+            Button:
+                text: 'Up'
+                on_press: app.handle_increment(1)
+
+            Button:
+                text: 'Down'
+                on_press: app.handle_increment(-1)
 
     Label:
         text: 'Miles to Kilometers:'
