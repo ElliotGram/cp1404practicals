@@ -1,7 +1,6 @@
 from kivy.app import App
 from kivy.lang import Builder
 
-
 class BoxLayoutDemo(App):
     def build(self):
         self.title = "Box Layout Demo"
@@ -11,6 +10,5 @@ class BoxLayoutDemo(App):
     def handle_greet(self):
         print("test")
         self.root.ids.output_label.text = f"Hello {self.root.ids.input_name.text}"
-
 
 BoxLayoutDemo().run()
