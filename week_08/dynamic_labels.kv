@@ -1,0 +1,14 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Label:
+        text: 'List of Names:'
+
+    BoxLayout:
+        orientation: 'vertical'
+        id: main
+
+        # Dynamically create labels for each name in the list
+        on_pre_enter:
+            for name in app.names:
+                main.add_widget(Label(text=name))
