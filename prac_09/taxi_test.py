@@ -1,4 +1,7 @@
-# taxi_test.py
+"""
+CP1404/CP5632 Practical
+taxi test
+"""
 from prac_09.taxi import Taxi
 
 # Create a new taxi object, my_taxi, with name "Prius 1" and 100 units of fuel
